@@ -1,0 +1,37 @@
+# CLAUDE.md
+
+このファイルは、このリポジトリでコードを扱う際にClaude Code (claude.ai/code) にガイダンスを提供します。
+
+## プロジェクト概要
+
+これは現在README.mdファイルのみを含む最小限のFastAPIプロジェクトリポジトリです。プロジェクトは初期セットアップ段階にあり、Pythonコード、依存関係、設定ファイルはまだ存在しません。
+
+## 現在の状態
+
+- 空のFastAPIプロジェクト（ソースコードファイルなし）
+- パッケージ依存関係が定義されていない
+- ビルド、テスト、開発スクリプトが設定されていない
+- 1つのコミットでGitリポジトリが初期化済み
+
+## 開発セットアップ
+
+これは新しいFastAPIプロジェクトなので、典型的なセットアップには以下が含まれます：
+
+1. 仮想環境の作成: `python -m venv venv`
+2. 仮想環境の有効化: `source venv/bin/activate` (macOS/Linux) または `venv\Scripts\activate` (Windows)
+3. FastAPIと依存関係のインストール: `pip install fastapi uvicorn`
+4. requirements.txtの作成: `pip freeze > requirements.txt`
+
+## 一般的なFastAPIパターン
+
+このプロジェクトにコードが追加される際は、FastAPIの規約に従う可能性が高いです：
+- メインアプリケーションファイルは通常 `main.py` または `app.py` という名前
+- APIルートは別々のモジュールに整理
+- リクエスト/レスポンス検証のためのPydanticモデル
+- 開発サーバーの実行: `uvicorn main:app --reload`
+
+### 注意事項
+
+- ドキュメントやソースコード上のコメントは日本語で書く
+- 全体のコードベースを確認して、セキュリティ・パフォーマンス・保守性に優れた設計になっているか確認すること
+- コミットはClaudeシグネチャ抜きで行う
